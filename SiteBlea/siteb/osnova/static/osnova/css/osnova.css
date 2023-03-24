@@ -1,0 +1,91 @@
+body {
+    background: #3A0001;
+}
+
+aside.dop{
+    float: right;
+    background: #000606;
+    width: 20%;
+    height: 130vh;
+    padding: 3%;
+    color: #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+}
+
+aside.dop .filt{
+    text-align: center;
+}
+
+
+aside.ret{
+    float: left;
+    background: #000606;
+    width: 20%;
+    height: 130vh;
+    padding: 3%;
+    color: #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+}
+
+aside.ret img{
+    width: 190px;
+    float: left;
+}
+
+aside.ret .logo{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    float: left;
+    padding: 2%;
+    position: relative;
+    right: 15px;
+}
+aside.ret ul{list-style: none}
+aside.ret ul li{
+    display: block;
+    margin-top: 5px;
+    transition: transform .3s ease;
+}
+aside.ret ul li:hover, aside.ret ul a:hover{
+    color: #737300;
+    text-decoration: none;
+    transform: scale(1.10);
+}
+
+main .feature{
+    float: left;
+    color: #BCBCBC;
+    margin-top: 100px;
+    text-align: center;
+    weight: 80%;
+}
+
+main .feature h1 {
+    font-size: 50px;
+}
+
+main .feature p { max-width: 400px; margin: 20px auto}
+main .feature a {font-size: 25px;}
+
+main.alert-warning {
+    float: left;
+    clear: both;
+    width: 100px;
+    margin: 5px 34%;
+    text-align: left;
+}
+
+main .nazva {
+    color: #BCBCBC;
+}
+
+main .tert{
+    color: #BCBCBC;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,20 @@
+{% extends 'osnova/shablon.html' %}
+
+{% block title %}
+Новости
+{% endblock %}
+
+{% block body %}
+    {% if posts %}
+        {% for el in posts %}
+            <div class="alert-warning ">
+                <h3 class="nazva">{{ el.title }}</h3>
+                <img src="{{ el.img.url }}">
+                <a href="{% url 'newsdinamic' el.id %}" class="btn btn-warning">Статья</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h3 class="tert">у вас нет записи</h3>
+    {% endif %}
+    {% include "osnova/pagination.html" with page=posts %}
+{% endblock %}

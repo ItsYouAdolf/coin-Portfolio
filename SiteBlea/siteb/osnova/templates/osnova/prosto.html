@@ -1,0 +1,23 @@
++{% extends 'osnova/shablon.html' %}
+
+{% block title %}
+Главная Страница
+{% endblock %}
+
+{% block body %}
+<aside class="dop">
+    <div>
+        <h3 class="filt">Монеты</h3>
+        {% for el in posts %}
+            <div class="alert-warning ">
+                <a href="{% url 'dinamic' el.id %}" >{{ el.name }}</a>
+            </div>
+        {% endfor %}
+    </div>
+</aside>
+    <div class="feature">
+        <h1>Главная Страница</h1>
+        <p>Cайт создан для определения редкость и стоимость монет,им с легкостью может пользоваться как начинающий так и опытный нумизмат</p>
+        <a>Удачи в коллекций</a>
+    </div>
+{% endblock %}

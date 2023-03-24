@@ -1,0 +1,18 @@
+{% extends 'osnova/shablon.html' %}
+
+{% block title %}
+Новости
+{% endblock %}
+
+{% block body %}
+ <div>
+     <h3 class="nazva">{{ Post.name }}</h3>
+     <img src="{{ Post.img.url }}">
+     <p class="tert">{{ Post.denomination.all }}</p>
+     <p class="tert">{{ Post.country.all }}</p>
+     <p class="tert">{{ Post.age.all }}</p>
+     <p class="tert">{{ Post.metal.all }}</p>
+     <p class="tert">{{ Post.des }}</p>
+     <a onclick="javascript:history.back(); return false;" class="trt">Назад</a>
+ </div>
+{% endblock %}
